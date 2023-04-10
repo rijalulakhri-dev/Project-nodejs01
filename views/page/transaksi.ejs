@@ -1,0 +1,89 @@
+<div class="page-content">
+
+    <!-- start page title -->
+    <div class="page-title-box">
+        <div class="container-fluid">
+         <div class="row align-items-center">
+             <div class="col-sm-6">
+                 <div class="page-title">
+                     <h2 class="text-white">Transaksi</h2>
+                 </div>
+             </div>
+         </div>
+        </div>
+     </div>
+
+    <div class="container-fluid">
+
+        <div class="page-content-wrapper">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">Transaksi Peminjaman</h4>                            
+                            <form method="POST" action="/transaksi" class="needs-validation" >
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="anggotaId" class="form-label">Nomor Anggota</label>
+                                            <input type="text" class="form-control" id="nomorAnggota" name="nomorAnggota" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="anggotaId" class="form-label">Nama Anggota</label>
+                                            <input type="text" class="form-control" id="namaAnggota" name="namaAnggota" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="bukuId" class="form-label">Kode Buku</label>
+                                            <input type="text" class="form-control" id="kodeBuku" name="kodeBuku" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="judulBuku" class="form-label">Judul Buku</label>
+                                            <select class="form-select" id="judulBuku" name="judulBuku" required>
+                                                <option selected disabled value="">--Pilih Judul Buku--</option>
+                                                <option value="">harry potter</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="tanggalPinjam" class="form-label">Tanggal Peminjaman</label>
+                                            <input type="date" class="form-control" id="tanggalPinjam" name="tanggalPinjam" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="tanggalKembali" class="form-label">Tanggal Pengembalian</label>
+                                            <input type="date" class="form-control" id="tanggalKembali" name="tanggalKembali" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div> <!-- container-fluid -->
+</div>

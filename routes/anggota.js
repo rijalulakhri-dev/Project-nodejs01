@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+    res.render('index',{
+        'page' : 'data-anggota',
+        'title' : 'Data Anggota'
+    });
+});
+
+module.exports = router

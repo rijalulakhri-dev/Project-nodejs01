@@ -1,0 +1,42 @@
+<%- include('partials/head') %>
+
+<body>
+
+
+    <div id="layout-wrapper">
+
+        <%- include('partials/header') %>
+
+        <%- include('partials/nav') %>
+
+        <div class="main-content">
+
+            <% if (page === 'home') { %>
+             <%- include('page/home.ejs') %>
+            <% } %>
+
+            <% if (page === 'data-anggota') { %>
+             <%- include('page/data-anggota.ejs') %>
+            <% } %>
+
+           <% if (page === 'data-buku') { %>
+             <%- include('page/data-buku.ejs') %>
+            <% } %>
+
+            <% if (page === 'laporan') { %>
+             <%- include('page/laporan.ejs') %>
+            <% } %>
+
+            <% if (page === 'transaksi') { %>
+             <%- include('page/transaksi.ejs') %>
+            <% } %>
+
+            <% if (page === 'upd-laporan') { %>
+             <%- include('page/upd-laporan.ejs') %>
+            <% } %>
+  
+            <% if (page === 'bukti-setoran') { %>
+             <%- include('page/bukti-setoran.ejs') %>
+            <% } %>
+
+            <%- include('partials/footer') %>
